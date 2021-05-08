@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--=== Favicon ===-->
+  <link rel="shortcut icon" href="{%static 'images/logo1.ico' %}" type="image/x-icon" />
+
+  <title>TravelIn</title>
+
+  <!--=== Bootstrap CSS ===-->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <!--=== Slicknav CSS ===-->
+  <link href="{% static 'css/plugins/slicknav.min.css' %}" rel="stylesheet">
+  <!--=== Magnific Popup CSS ===-->
+  <link href="{% static 'css/plugins/magnific-popup.css' %}" rel="stylesheet">
+  <!--=== Owl Carousel CSS ===-->
+  <link href="{% static 'css/plugins/owl.carousel.min.css' %}" rel="stylesheet">
+  <!--=== Gijgo CSS ===-->
+  <link href="{% static 'css/plugins/gijgo.css' %}" rel="stylesheet">
+  <!--=== FontAwesome CSS ===-->
+  <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+  <!--=== Theme Reset CSS ===-->
+  <link href="{% static 'css/reset.css' %}" rel="stylesheet">
+  <!--=== Main Style CSS ===-->
+  <link href="{% static 'css/style1.css' %}" rel="stylesheet">
+  <!--=== Responsive CSS ===-->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+
+</head>
+
+<body class="loader-active">
+
+  <!--== Preloader Area Start ==-->
+  <div class="preloader">
+    <div class="preloader-spinner">
+      <div class="loader-content">
+        <img src="{% static 'images/preloader.gif' %}" alt="travelin">
+      </div>
+    </div>
+  </div>
+  <!--== Preloader Area End ==-->
+
+  <!--== Header Area Start ==-->
+  <header id="header-area" class="fixed-top">
+    <!--== Header Top Start ==-->
+    <div id="header-top" class="d-none d-xl-block">
+      <div class="container">
+        <div class="row">
+          <!--== Single HeaderTop Start ==-->
+          <div class="col-lg-3 text-left">
+            <i class="fa fa-map-marker"></i> 666/2, Bengaluru , India
+          </div>
+          <!--== Single HeaderTop End ==-->
+
+          <!--== Single HeaderTop Start ==-->
+          <div class="col-lg-3 text-center">
+            <i class="fa fa-mobile"></i> +91 9899999999
+          </div>
+          <!--== Single HeaderTop End ==-->
+
+          <!--== Single HeaderTop Start ==-->
+          <div class="col-lg-3 text-center">
+            <i class="fa fa-clock-o"></i> Mon-Sat 09.00 - 17.00
+          </div>
+          <!--== Single HeaderTop End ==-->
+
+          <!--== Social Icons Start ==-->
+          <div class="col-lg-3 text-right">
+            <div class="header-social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <!--== Social Icons End ==-->
+        </div>
+      </div>
+    </div>
+    <!--== Header Top End ==-->
+
+    <!--== Header Bottom Start ==-->
+    <div id="header-bottom">
+      <div class="container">
+        <div class="row">
+          <!--== Logo Start ==-->
+          <div class="col-lg-4">
+            <a href="{% url 'index' %}" class="logo">
+              <!--  <img src="assets/img/carlogo1.png" alt="TravelIn">-->
+              <h2><a href="{% url 'index' %}">TravelIn</a></h2>
+            </a>
+          </div>
+          <!--== Logo End ==-->
+
+          <!--== Main Menu Start ==-->
+          <div class="col-lg-8 d-none d-xl-block">
+            <nav class="mainmenu alignright">
+              <ul>
+                <li><a href="{% url 'index' %}">Home</a>
+
+                </li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li class="active"><a href="#">services</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+
+                <li><a href="{% url 'contacts' %}">Contact</a></li>
+                <li class=""><a href="{% url 'faq' %}">FAQ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!--== Main Menu End ==-->
+        </div>
+      </div>
+    </div>
+    <!--== Header Bottom End ==-->
+  </header>
+  <!--== Header Area End ==-->
+
+
+  <!--== Page Title Area Start ==-->
+  <section id="page-title-area" class="section-padding overlay">
+    <div class="container">
+      <div class="row">
+        <!-- Page Title Start -->
+        <div class="col-lg-12">
+          <div class="section-title  text-center">
+            <h2>our packages</h2>
+            <span class="title-line"><i class="fa fa-car"></i></span>
+            <p> TravelIn-A signature of excellence
+            </p>
+            </p>
+          </div>
+        </div>
+        <!-- Page Title End -->
+      </div>
+    </div>
+  </section>
+  <!--== Page Title Area End ==-->
+
+  <!--== Pricing Area Start ==-->
+  <!--== Gallery Page for all Content Start ==-->
+  <section id="gallery-page-content" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="popular-cars-wrap">
+            <!-- Filtering Menu -->
+            <div class="popucar-menu text-center">
+              <a href="#" data-filter="*" class="active">Package Price</a>
+
+            </div>
+            <!-- Filtering Menu -->
+
+            <div class="row popular-car-gird">
+              <!-- Single Popular Car Start -->
+              <div class="col-lg-4 col-md-6 con suv mpv">
+                <div class="single-popular-car">
+                  <div class="p-car-thumbnails">
+                    <a class="car-hover" href="{% static 'images/car/sedan.jpg' %}">
+                      <img src="{% static 'images/car/sedan.jpg' %}" alt="TravelIn">
+                    </a>
+                  </div>
+
+                  <div class="p-car-content">
+                    <h3>
+                      <a href="#">sedan</a>
+
+                    </h3>
+
+                    <h5>Sedan</h5>
+
+                    <div class="p-car-feature">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Rate card
+                      </button>
+
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Go for It
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Go for Booking </h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label for="inputName">Name</label>
+                                  <input type="text" class="form-control" id="inputName" placeholder="name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPhone">Phone</label>
+                                  <input type="text" class="form-control" id="inputPhone" placeholder="Phone St">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress2">Address </label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+
+                                </div>
+
+
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal end -->
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hour</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">KM</th>
+                                    <th scope="col">Extra per km</th>
+                                    <th scope="col">Extra hour</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Popular Car End -->
+
+              <!-- Single Popular Car Start -->
+              <!-- Single Popular Car Start -->
+              <div class="col-lg-4 col-md-6 con suv mpv">
+                <div class="single-popular-car">
+                  <div class="p-car-thumbnails">
+                    <a class="car-hover" href="{% static 'images/car/hatchback.jpg' %}">
+                      <img src="{% static 'images/car/hatchback.jpg' %}" alt="travelin">
+                    </a>
+                  </div>
+
+                  <div class="p-car-content">
+                    <h3>
+                      <a href="#"> HATCHBACK</a>
+
+                    </h3>
+
+                    <h5>HATCHBACK</h5>
+
+                    <div class="p-car-feature">
+                      <!-- Button trigger modal start -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Rate card
+                      </button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Go for It
+                      </button>
+                      <!-- Button trigger modal end-->
+
+                      <!-- Modal start -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hour</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">KM</th>
+                                    <th scope="col">Extra per km</th>
+                                    <th scope="col">Extra hour</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--modal end-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Popular Car End -->
+              <!-- Single Popular Car End -->
+
+              <!-- Single Popular Car Start -->
+              <!-- Single Popular Car Start -->
+              <div class="col-lg-4 col-md-6 con suv mpv">
+                <div class="single-popular-car">
+                  <div class="p-car-thumbnails">
+                    <a class="car-hover" href="{% static 'images/car/hatchback.jpg' %}">
+                      <img src="{% static 'images/car/hatchback.jpg' %}" alt="hatchback">
+                    </a>
+                  </div>
+
+                  <div class="p-car-content">
+                    <h3>
+                      <a href="#">
+                        <h3>Hatch MUV/SUV </h3>
+                      </a>
+
+                    </h3>
+
+                    <h5>Hatch MUV/SUV </h5>
+
+                    <div class="p-car-feature">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Rate card
+                      </button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Go for It
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-hover">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hour</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">KM</th>
+                                    <th scope="col">Extra per km</th>
+                                    <th scope="col">Extra hour</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Popular Car End -->
+              <!-- Single Popular Car Start -->
+              <div class="col-lg-4 col-md-6 con suv mpv">
+                <div class="single-popular-car ">
+                  <div class="p-car-thumbnails">
+                    <a class="car-hover" href="{% static 'images/car/bmw.jpg' %}">
+                      <img src="{% static 'images/car/bmw.jpg' %}" alt="travelin-bmw">
+                    </a>
+                  </div>
+
+                  <div class="p-car-content">
+                    <h3>
+                      <a href="#">
+                        <h3>Benz/Audi/BMW</h3>
+                      </a>
+
+                    </h3>
+
+                    <h5>Benz/Audi/BMW</h5>
+
+                    <div class="p-car-feature">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Rate card
+                      </button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Go for It
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-hover">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hour</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">KM</th>
+                                    <th scope="col">Extra per km</th>
+                                    <th scope="col">Extra hour</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Single Popular Car End -->
+
+              <!-- Single Popular Car Start -->
+              <div class="col-lg-4 col-md-6 con suv mpv">
+                <div class="single-popular-car ">
+                  <div class="p-car-thumbnails">
+                    <a class="car-hover" href="{% static 'images/car/bmw.jpg' %}">
+                      <img src="{% static 'images/car/bmw.jpg' %}" alt="travelin">
+                    </a>
+                  </div>
+
+                  <div class="p-car-content">
+                    <h3>
+                      <a href="#">
+                        <h3>Benz/Audi/BMW</h3>
+                      </a>
+
+                    </h3>
+
+                    <h5>Benz/Audi/BMW</h5>
+
+                    <div class="p-car-feature">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Rate card
+                      </button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Go for It
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-hover">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hour</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">KM</th>
+                                    <th scope="col">Extra per km</th>
+                                    <th scope="col">Extra hour</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Single Popular Car End -->
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== Gallery Page for all Content End ==-->
+
+  <!--== Gallery Page for 2nd Content Start ==-->
+  <section id="gallery-page-content" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="popular-cars-wrap">
+            <!-- Filtering Menu -->
+            <div class="popucar-menu text-center">
+              <a href="#" data-filter="*" class="active">Out Station Price</a>
+
+            </div>
+            <!-- Filtering Menu -->
+
+            <div class="row popular-car-gird">
+              <!-- Single Popular Car Start -->
+              <div class="col-lg-4 col-md-6 con suv mpv">
+                <div class="single-popular-car">
+                  <div class="p-car-thumbnails">
+                    <a class="car-hover" href="{% static 'images/car/hatchback1.jpg' %}">
+                      <img src="{% static 'images/car/hatchback1.jpg' %}" alt="TravelIn-hatchback1">
+                    </a>
+                  </div>
+
+                  <div class="p-car-content">
+                    <h3>
+                      <a href="#">HATCHBACK</a>
+
+                    </h3>
+
+                    <h5>HATCHBACK</h5>
+
+                    <div class="p-car-feature">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Rate card
+                      </button>
+
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Go for It
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Go for Booking </h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label for="inputName">Name</label>
+                                  <input type="text" class="form-control" id="inputName" placeholder="name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPhone">Phone</label>
+                                  <input type="text" class="form-control" id="inputPhone" placeholder="Phone St">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress2">Address </label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+
+                                </div>
+
+
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal end -->
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hour</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">KM</th>
+                                    <th scope="col">Extra per km</th>
+                                    <th scope="col">Extra hour</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Popular Car End -->
+
+              <!-- Single Popular Car Start -->
+              <!-- Single Popular Car Start -->
+              <div class="col-lg-4 col-md-6 con suv mpv">
+                <div class="single-popular-car">
+                  <div class="p-car-thumbnails">
+                    <a class="car-hover" href="{% static 'images/car/sedan1.jpg' %}">
+                      <img src="{% static 'images/car/sedan1.jpg' %}" alt="travelin-sedan1">
+                    </a>
+                  </div>
+
+                  <div class="p-car-content">
+                    <h3>
+                      <a href="#">SEDAN</a>
+
+                    </h3>
+
+                    <h5>SEDAN</h5>
+
+                    <div class="p-car-feature">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Rate card
+                      </button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Go for It
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hour</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">KM</th>
+                                    <th scope="col">Extra per km</th>
+                                    <th scope="col">Extra hour</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Popular Car End -->
+              <!-- Single Popular Car End -->
+
+              <!-- Single Popular Car Start -->
+              <!-- Single Popular Car Start -->
+              <div class="col-lg-4 col-md-6 con suv mpv">
+                <div class="single-popular-car">
+                  <div class="p-car-thumbnails">
+                    <a class="car-hover" href="{% static 'images/car/innova.jpg' %}">
+                      <img src="{% static 'images/car/innova.jpg' %}" alt="travelin">
+                    </a>
+                  </div>
+
+                  <div class="p-car-content">
+                    <h3>
+                      <a href="#">
+                        <h3>Innova, TT</h3>
+                      </a>
+
+                    </h3>
+
+                    <h5>Innova, TT</h5>
+
+                    <div class="p-car-feature">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Rate card
+                      </button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Go for It
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-hover">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hour</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">KM</th>
+                                    <th scope="col">Extra per km</th>
+                                    <th scope="col">Extra hour</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+
+                                    <td>8</td>
+                                    <td>1800</td>
+                                    <td>80</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Popular Car End -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== Gallery Page for 2nd Content End ==-->
+
+  <!--== FAQ Area End ==-->
+
+  <!--== Footer Area Start ==-->
+  <section id="footer-area">
+    <!-- Footer Widget Start -->
+    <div class="footer-widget-area">
+      <div class="container">
+        <div class="row">
+          <!-- Single Footer Widget Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-footer-widget">
+              <h2>About Us</h2>
+              <div class="widget-body">
+                <img src="{% static 'images/logow.png' %}" alt="travelin">
+                <p>Its just a trailor ..!! waiting for the launch.</p>
+
+                <div class="newsletter-area">
+                  <form action="{% url 'index' %}">
+                    <input type="email" placeholder="Subscribe Our Newsletter">
+                    <button type="submit" class="newsletter-btn"><i class="fa fa-send"></i></button>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Single Footer Widget End -->
+
+          <!-- Single Footer Widget Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-footer-widget">
+              <h2>Recent Posts</h2>
+              <div class="widget-body">
+                <ul class="recent-post">
+                  <li>
+                    <a href="#">
+                      Hello YMS!
+                      <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Hello Bengaluru!
+                      <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Hello Bengaluru!
+                      <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Hello Bengaluru!
+                      <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Footer Widget End -->
+
+          <!-- Single Footer Widget Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-footer-widget">
+              <h2>get in touch</h2>
+              <div class="widget-body">
+
+
+                <ul class="get-touch">
+                  <li><i class="fa fa-map-marker"></i> 666/2, Bengaluru, India</li>
+                  <li><i class="fa fa-mobile"></i> +91 98999999993</li>
+                  <li><i class="fa fa-envelope"></i> TravelIn@gmail.com</li>
+                </ul>
+                <a href="https://urlzs.com/tmrr" class="map-show" target="_blank">Show Location</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Footer Widget End -->
+        </div>
+      </div>
+    </div>
+    <!-- Footer Widget End -->
+
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>
+                document.write(new Date().getFullYear());
+              </script> All rights reserved by <a href="https://TravelIn.com" target="_blank">TravelIn</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom End -->
+  </section>
+  <!--== Footer Area End ==-->
+
+  <!--== Scroll Top Area Start ==-->
+  <div class="scroll-top">
+    <img src="{% static 'images/up-arrow-png-8.png' %}" alt="JSOFT">
+  </div>
+  <!--== Scroll Top Area End ==-->
+
+  <!--=======================Javascript============================-->
+    <!--=== Jquery Min Js ===-->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <!--=== Jquery Migrate Min Js ===-->
+    <script src="{% static 'js/jquery-migrate.min.js' %}"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!--=== Gijgo Min Js ===-->
+    <script src="{% static 'js/plugins/gijgo.js' %}"></script>
+    <!--=== Vegas Min Js ===-->
+    <script src="{% static 'js/plugins/vegas.min.js' %}"></script>
+    <!--=== Isotope Min Js ===-->
+    <script src="{% static 'js/plugins/isotope.min.js' %}"></script>
+    <!--=== Owl Caousel Min Js ===-->
+    <script src="{% static 'js/plugins/owl.carousel.min.js' %}"></script>
+    <!--=== Waypoint Min Js ===-->
+    <script src="{% static 'js/plugins/waypoints.min.js' %}"></script>
+    <!--=== CounTotop Min Js ===-->
+    <script src="{% static 'js/plugins/counterup.min.js' %}"></script>
+    <!--=== YtPlayer Min Js ===-->
+    <script src="{% static 'js/plugins/mb.YTPlayer.js' %}"></script>
+    <!--=== Magnific Popup Min Js ===-->
+    <script src="{% static 'js/plugins/magnific-popup.min.js' %}"></script>
+    <!--=== Slicknav Min Js ===-->
+    <script src="{% static 'js/plugins/slicknav.min.js' %}"></script>
+  
+    <!--=== Mian Js ===-->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

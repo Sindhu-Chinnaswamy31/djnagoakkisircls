@@ -1,0 +1,45 @@
+{% extends "travel/header.html" %}
+{% block content %}
+<style type="text/css">
+	.div1{
+        position:relative;
+        float:left;
+        height:400px;
+        width:60%;
+        top: 10%;
+        border:dashed;
+        border-radius: 5px;
+    }
+    .div2{
+        position: relative;
+        float:left;
+        height:400px;
+        margin-left: 25px;
+        width:33.5%;
+        background-color:black;
+        color: white;
+        top: 10%;
+        border:dashed;
+        border-radius: 5px;
+    }
+	pre{
+		color: red;
+	}
+	input {
+		margin: 5px;
+	}
+	l
+</style>
+<div style="width: block;height:130px;">
+	<div class="div1">
+		<h1>Eneter your problem</h1>
+	<form>
+		<label>e-mail: </label><input type="text" name="e-mail" placeholder="Enter your email"><br/><br/>	
+		<label>Username: </label><input type="text" name="Username" placeholder="Enter your user name"><br/><br/>
+		<label>comment </label><textarea name="comments" placeholder="enter your comments"></textarea><br/><br/>
+		<input type="button" value="SUBMIT">
+	</form>
+	</div>
+	<div class="div2"><img src="media\user.png" width="100%" alt="image"/></div>
+</div>
+{% endblock %}

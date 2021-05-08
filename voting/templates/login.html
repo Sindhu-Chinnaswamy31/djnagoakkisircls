@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}Login{% endblock %}
+
+{% block body_block %}
+<br>
+<div class="container">
+   <div class="jumbotron">
+        <form method="POST">
+          {% csrf_token %}
+          <label for="username">Username : </label>
+          <input type="text" name="username" id="username">
+          <label for="password">Password : </label>
+          <input type="password" name="password" id="password">
+          <input type="submit" value="Login" class="btn btn-primary">
+        </form>
+    </div>
+  </div>
+  
+{% endblock %}

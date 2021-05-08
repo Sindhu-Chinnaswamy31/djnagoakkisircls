@@ -1,0 +1,67 @@
+<!doctype html>
+	<head>	
+		<title>travel assist</title>
+			<style type="text/css">
+            .header{
+                background-color: red;
+                color: white;
+                font-size: 38pt;
+                text-align: left;
+                width: block;
+                height: 70px;
+                padding: 20px 10px 20px 10px;
+                border-radius: 5px;
+                margin-top: 0px;
+            }  
+            .ul1
+        {   position: absolute;
+            top: 19%;
+            margin-top:0px;
+            list-style-type: none;
+            font-size: 16pt;
+            border-radius: 5px;
+            background-color: #fa0000;
+            width:96.4%;  
+            display: table;
+         
+        }
+    
+        a{
+            text-decoration: none;
+            color:aliceblue;
+            padding: 5px;
+            display: block;
+            }
+       .ul1 li
+        {   float :left;
+           }
+        footer{
+            background-color: red;
+            position: absolute;
+            width: 97%;
+            top:90%;
+            text-align: center;
+            padding:15px;
+           margin-bottom:0%;
+            color:aliceblue;
+            border-radius: 5px;
+        }
+
+        </style>
+  
+    </head>
+  
+    <body>
+      <div style="width: block;">  <h1 class="header">Site title</h1>
+        <ul class="ul1" >
+    <li><a href="travel/index.html" class="active">Home</a></li>
+    <li><a href="travel/about.html">About Us </a></li>
+    <li><a href="#">Publications</a></li>
+    <li><a href="travel/contact.html">Contact Us</a></li>
+    </ul> </div>
+        {% block content %}
+
+        {% endblock %}
+        <footer>oursitevisit@gamil.com</footer>
+		 </body>
+</html>
